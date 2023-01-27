@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "nodemon objects.js"
+		"dev": "nodemon arrays.js"
 	},
 	"keywords": [],
 	"author": "",
