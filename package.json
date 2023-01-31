@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "nodemon standard-lib.js"
+		"dev": "nodemon iterators.js"
 	},
 	"keywords": [],
 	"author": "",
