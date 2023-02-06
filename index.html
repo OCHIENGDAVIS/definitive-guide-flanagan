@@ -6,10 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/main.css" />
 		<title>Javascript in the Browser</title>
-		<script async src="async-2.js"></script>
-		<script defer src="defered.js"></script>
+		<!-- <script async src="async-2.js"></script> -->
+		<!-- <script defer src="defered.js"></script> -->
+		<script src="intersection-observer.js" defer></script>
 	</head>
 	<body>
+		<!-- BODY FADE -->
+		<div></div>
 		<header class="header">
 			<nav class="header__nav">
 				<ul class="header__nav--items">
@@ -28,12 +31,59 @@
 				</ul>
 			</nav>
 		</header>
-		<section class="hero">
-			<h1>Digital Clock</h1>
+		<section class="hero" id="hero1">
+			<h1>Section 1</h1>
 			<img src="" alt="" />
 			<span id="clock"></span>
 			<div class="img"></div>
 			<button class="btn">Click Me!</button>
+			<div class="spinner"></div>
+			<script>
+				// this code is executed when the browser passes HTML code
+				function displayTime() {
+					let clock = document.querySelector('#clock');
+					let now = new Date();
+					clock.textContent = now.toLocaleDateString();
+				}
+				displayTime();
+				setInterval(displayTime, 1000);
+			</script>
+		</section>
+		<section class="hero" id="hero2">
+			<h1>Section 2</h1>
+			<img src="" alt="" />
+			<span id="clock"></span>
+			<div class="img"></div>
+			<button class="btn">Click Me!</button>
+
+			<script>
+				// this code is executed when the browser passes HTML code
+				function displayTime() {
+					let clock = document.querySelector('#clock');
+					let now = new Date();
+					clock.textContent = now.toLocaleDateString();
+				}
+				displayTime();
+				setInterval(displayTime, 1000);
+			</script>
+		</section>
+		<section class="hero" id="hero3">
+			<h1>Section 3</h1>
+			<img src="" alt="" />
+			<span id="clock"></span>
+			<div class="img"></div>
+			<button class="btn">Click Me!</button>
+			<div class="dropdown">
+				<button class="dropdown__button">Dropdown</button>
+				<div class="dropdown__content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</div>
+			</div>
 			<script>
 				// this code is executed when the browser passes HTML code
 				function displayTime() {
