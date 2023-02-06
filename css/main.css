@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	padding: 0 4rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ************* */
+/* HEADER */
+/* ************* */
+
+.header {
+	font-size: 1.8rem;
+	width: 100%;
+}
+.header__nav {
+	padding: 2rem 0;
+}
+.header__nav--items {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 4rem;
+	list-style: none;
+}
+.header__nav--item {
+}
+.header__nav--link {
+	text-decoration: none;
+	color: #0a0a0a;
+}
+
+.bg {
+	background-color: red;
+}
+.active {
+	color: white;
+	border-bottom: 1px solid #eee;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* *************** */
+/* HERO */
+/* *************** */
+.btn {
+	margin-top: 2rem;
+	padding: 1rem 2rem;
+	font-size: 1.7rem;
+	background-color: #e2dddd;
+	color: #0a0a0a;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	font-weight: bold;
+	transition: background-color 0.2s ease-in;
+}
+.btn:hover {
+	background-color: #bebbbb;
+}
+
+.text-big {
+	font-size: 3rem;
+}
